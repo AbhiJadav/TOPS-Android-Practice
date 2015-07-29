@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#a52a2a"
+    tools:context="com.example.assignmentexample80.RegisterActivity" 
+    
+   >
+
+    <EditText
+        android:id="@+id/edname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edname"
+        android:layout_below="@+id/edname"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Phone "
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edphone"
+        android:layout_below="@+id/edphone"
+        android:layout_marginTop="21dp"
+        android:hint="Enter Email"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edemail"
+        android:layout_below="@+id/edemail"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edrpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edpass"
+        android:layout_below="@+id/edpass"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Retype Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edrpass"
+        android:layout_below="@+id/edrpass"
+        android:layout_marginTop="26dp"
+        android:text="Submit" />
+
+</RelativeLayout>

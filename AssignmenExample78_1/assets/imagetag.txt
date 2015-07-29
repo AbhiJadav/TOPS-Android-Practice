@@ -1,0 +1,10 @@
+<html>
+
+<title>Image Tag</title>
+<body>
+<img src="images/atitlan.jpg" class="flr" alt="Lake Atitlan, Guatemala" width="300" height="240">
+
+</body>
+
+</html>
+
